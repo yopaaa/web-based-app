@@ -22,11 +22,11 @@ export default function RootLayout() {
 
       <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
         <Stack>
-          {/* <Stack.Screen name="Login" /> */}
-          <Stack.Screen name="(home)" options={{ headerShown: false, animation: "none" }} />
+          <Stack.Screen name="Web"  options={{ headerShown: false, animation: "none" }} />
+          {/* <Stack.Screen name="(home)" options={{ headerShown: false, animation: "none" }} />
           <Stack.Screen name="(tabs)" options={{ headerShown: false, animation: "none" }} />
           <Stack.Screen name="Login" options={{  animation: "none" }} />
-          <Stack.Screen name="+not-found" />
+          <Stack.Screen name="+not-found" /> */}
         </Stack>
         <StatusBar style="auto" />
       </ThemeProvider>

@@ -43,10 +43,10 @@ const styles = StyleSheet.create({
     width: '100%',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#39C7FD',
+    backgroundColor: '#005f88',
   },
   logo: {
-    width: 200,
-    height: 200,
+    width: 180,
+    height: 180,
   },
 });

@@ -19,7 +19,7 @@ export default function RootLayout() {
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack>
-        <Stack.Screen name="Web" options={{ headerShown: false, animation: "none" }} />
+        <Stack.Screen name="index" options={{ headerShown: false, animation: "none" }} />
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>

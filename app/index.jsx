@@ -22,7 +22,7 @@ const CustomWebView = () => {
 
   return (
     <WebView
-      source={{ uri: 'https://kalkuraid-production.up.railway.app/' }}
+      source={{ uri: 'http://13.210.158.221/kalkuraid/' }}
       startInLoadingState
       renderLoading={renderLoading}
       javaScriptEnabled

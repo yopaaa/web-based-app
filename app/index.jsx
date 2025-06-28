@@ -1,14 +1,7 @@
-// import CookieManager from '@react-native-cookies/cookies';
-import { ActivityIndicator, Image, StyleSheet, View } from 'react-native';
+import { ActivityIndicator, Image, StatusBar, StyleSheet, View } from 'react-native';
 import WebView from 'react-native-webview';
 
 const CustomWebView = () => {
-  const handleLoadEnd = () => {
-    // CookieManager.get('https://kalkuraid-production.up.railway.app').then(cookies => {
-    //   console.log('Cookies:', cookies);
-    // });
-  };
-
   const renderLoading = () => (
     <View style={styles.loadingContainer}>
       <Image
@@ -21,16 +14,19 @@ const CustomWebView = () => {
   );
 
   return (
-    <WebView
-      source={{ uri: 'http://13.210.158.221/kalkuraid/' }}
-      startInLoadingState
-      renderLoading={renderLoading}
-      javaScriptEnabled
-      domStorageEnabled
-      sharedCookiesEnabled={true} // ini penting!
-      onLoadEnd={handleLoadEnd} // ambil cookie saat load selesai
-      thirdPartyCookiesEnabled={true}
-    />
+    <View style={{ flex: 1, paddingTop: StatusBar.currentHeight || 0 }}>
+      <WebView
+        source={{ uri: 'http://13.210.158.221/kalkuraid/' }}
+        style={{ flex: 1 }} // <== penting!
+        startInLoadingState
+        renderLoading={renderLoading}
+        javaScriptEnabled
+        domStorageEnabled
+        sharedCookiesEnabled={true} // ini penting!
+        thirdPartyCookiesEnabled={true}
+      />
+    </View>
+
   );
 };
 
@@ -44,6 +40,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#005f88',
+    paddingTop: StatusBar.currentHeight || 0,
   },
   logo: {
     width: 180,

@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Kalkuraid",
-    "slug": "test",
+    "slug": "kalkuraid",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/adaptive-icon-new.png",
@@ -34,7 +34,7 @@
           "image": "./assets/images/adaptive-icon.png",
           "resizeMode": "cover",
           "backgroundColor": "#005f88",
-           "imageWidth": 180
+          "imageWidth": 180
         }
       ]
     ],
@@ -44,8 +44,9 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "608b5c44-5f3a-46ce-98e5-0f0ebc3a0c36"
+        "projectId": "e7d00036-2be5-48f7-aa18-55be569cf715"
       }
-    }
+    },
+    "owner": "fraurizz"
   }
 }

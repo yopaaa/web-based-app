@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "Kalkuraid",
+    "name": "Integrew",
     "slug": "kalkuraid",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/adaptive-icon-new.png",
+    "icon": "./assets/images/adaptive-icon-integrew.png",
     "scheme": "Kalkuraid",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -14,7 +14,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon-new.png",
+        "foregroundImage": "./assets/images/adaptive-icon-integrew.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
@@ -31,7 +31,7 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/adaptive-icon.png",
+          "image": "./assets/images/icon-integrew.png",
           "resizeMode": "cover",
           "backgroundColor": "#005f88",
           "imageWidth": 180

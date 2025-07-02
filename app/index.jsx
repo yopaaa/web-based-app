@@ -16,7 +16,7 @@ const CustomWebView = () => {
   return (
     <View style={{ flex: 1, paddingTop: StatusBar.currentHeight || 0 }}>
       <WebView
-        source={{ uri: 'https://yopaaa.xyz/kalkuraid/' }}
+        source={{ uri: 'https://yopaaa.xyz/Integrew/' }}
         style={{ flex: 1 }} // <== penting!
         startInLoadingState
         renderLoading={renderLoading}
